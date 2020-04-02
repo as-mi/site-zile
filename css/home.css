@@ -2,10 +2,59 @@ html {
   scroll-behavior: smooth;
 }
 
-div.text {
-  margin: 2em 1em;
+.cover-overlay {
+  padding: 2em 1em;
 }
 
 footer {
   text-align: center;
+}
+
+@media (min-width: 500px) {
+  .jumbotron {
+    margin-bottom: 0;
+  }
+
+  main > section {
+    position: relative;
+
+    color: white;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .cover-overlay {
+    background-color: rgba(32, 32, 32, 0.5);
+
+    height: 50vw;
+    padding-top: 10vw;
+  }
+
+  .text {
+    max-width: 45em;
+    margin: auto;
+  }
+
+  .text div {
+    margin-top: 10vw;
+  }
+
+  #campionat-cs {
+    background-color: #01000f;
+    background-image: url("/img/campionat_de_cs_go.jpg");
+  }
+
+  #campionat-lol {
+    background-color: #0a1743;
+    background-image: url("/img/campionat_de_lol.jpg");
+  }
+
+  #seara-de-film {
+    background-image: url("/img/seara_de_film.jpg");
+  }
+
+  #seara-de-jocuri {
+    background-image: url("/img/seara_de_jocuri.jpg");
+  }
 }
