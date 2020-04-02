@@ -35,49 +35,22 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="css/home.css" />
+    <script defer src="/script/hide-navbar.js"></script>
+
+    <link rel="stylesheet" href="css/home.css?v=1" />
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="0">
-    <nav class="navbar navbar-expand-md navbar-light sticky-top bg-light">
-      <a class="navbar-brand" href="#">Zilele ASMI</a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar-content"
-        aria-controls="navbar-content"
-        aria-expanded="false"
-        aria-label="Arată/ascunde navigația"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbar-content">
-        <ul class="nav nav-pills flex-md-row flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#campionat-cs">Campionat de CS:GO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#campionat-lol">Campionat de LoL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#seara-de-netflix">Seara de Netflix</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#seara-de-jocuri">Seara de Jocuri</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <body>
     <header class="jumbotron text-center">
-      <img
-        class="img-fluid mx-auto"
-        alt="Zilele ASMI"
-        src="img/logo-zile.png"
-        width="261"
-        height="360"
-      />
+      <picture>
+        <source type="image/webp" srcset="img/logo-zile.webp" />
+        <img
+          class="img-fluid mx-auto"
+          alt="Zilele ASMI"
+          src="img/logo-zile.png"
+          width="261"
+          height="360"
+        />
+      </picture>
       <p class="lead mt-3">La mulți ani, drag ASMI!</p>
       <p>
         Anul acesta
@@ -93,51 +66,111 @@
         Descoperă ce ți-am pregătit
       </a>
     </header>
-    <main id="main" class="container">
-      <section>
-        <header>
-          <h2 id="campionat-cs">Campionatul de Counter Strike</h2>
-          <span>9 aprilie</span>
-        </header>
-        <p>
-          Ești pasionat de Counter Strike? Vino să ne arăți ce țintă ai la
-          Campionatul de CS:GO!
-        </p>
+    <main id="main">
+      <section id="campionat-cs">
+        <div class="text">
+          <header>
+            <h2>Campionatul de Counter-Strike</h2>
+            <span>9 aprilie</span>
+          </header>
+          <p>
+            Ești pasionat de Counter Strike? Vino să ne arăți ce țintă ai la
+            Campionatul de CS:GO!
+          </p>
+          <div class="text-center">
+            <a
+              class="btn btn-primary"
+              href="https://forms.gle/Uvz95nZE9CRNx5Qh6"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Înscrie-te acum!</a
+            >
+          </div>
+        </div>
       </section>
-      <section>
-        <header>
-          <h2 id="campionat-lol">Campionatul de League of Legends</h2>
-          <span>10 aprilie</span>
-        </header>
-        <p>
-          Alegeți campionul și pregătește-te de o luptă grea la Campionatul de
-          League of Legends!
-        </p>
+      <section id="campionat-lol">
+        <div class="text">
+          <header>
+            <h2>Campionatul de League of Legends</h2>
+            <span>10 aprilie</span>
+          </header>
+          <p>
+            Alegeți campionul și pregătește-te de o luptă grea la Campionatul de
+            League of Legends!
+          </p>
+          <div class="text-center">
+            <a
+              class="btn btn-primary"
+              href="https://docs.google.com/forms/d/1e3HPzr_jPa3gjuUMWNIbEyKw3dijylJ0bnZ7aA3uCCo/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Înscrie-te la 5v5!</a
+            >
+            <a
+              class="btn btn-primary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdrI3UIgZ26qjcfEcEE6-hIvy5rq0LVJoArTxw4RKjDv3hzzg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Înscrie-te la 1v1!</a
+            >
+          </div>
+          <div class="text-center mt-3">
+            <a
+              class="btn btn-info"
+              href="https://drive.google.com/file/d/13M_q04jWytvLM3k-s9HPm_FX1P5JX1H0/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Regulament</a
+            >
+          </div>
+        </div>
       </section>
-      <section>
-        <header>
-          <h2 id="seara-de-netflix">Seara de Netflix</h2>
-          <span>11 aprilie</span>
-        </header>
-        <p>
-          Seara de Netflix aduce laolaltă cinefilii ca să ne uităm împreună la
-          seriale!
-        </p>
+      <section id="seara-de-film">
+        <div class="text">
+          <header>
+            <h2>Seara de Film</h2>
+            <span>11 aprilie</span>
+          </header>
+          <p>
+            Seara de Film aduce laolaltă cinefilii ca să ne uităm împreună la
+            <em>La Casa de Papel</em>!
+          </p>
+          <div class="text-center">
+            <a
+              class="btn btn-primary"
+              href="https://www.facebook.com/events/1112466242431050"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Vizitează pagina evenimentului</a
+            >
+          </div>
+        </div>
       </section>
-      <section>
-        <header>
-          <h2 id="seara-de-jocuri">Seara de Jocuri</h2>
-          <span>12 aprilie</span>
-        </header>
-        <p>
-          Seara de Jocuri aduce atmosfera jocurilor de masă cu prietenii în
-          mediul virtual!
-        </p>
+      <section id="seara-de-jocuri">
+        <div class="text">
+          <header>
+            <h2>Seara de Jocuri</h2>
+            <span>12 aprilie</span>
+          </header>
+          <p>
+            Seara de Jocuri aduce atmosfera jocurilor de masă cu prietenii în
+            mediul virtual!
+          </p>
+          <div class="text-center">
+            <a
+              class="btn btn-primary"
+              href="https://www.facebook.com/events/665300680937491/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Vizitează pagina evenimentului!</a
+            >
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      Eveniment organizat în integralitate de ASMI. Toate persoanele sunt
-      binevenite să participe.
+    <footer class="small text-muted">
+      Eveniment organizat în integralitate de ASMI. <br />
+      Toate persoanele sunt binevenite să participe.
     </footer>
   </body>
 </html>

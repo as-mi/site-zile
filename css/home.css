@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  position: relative;
+div.text {
+  margin: 2em 1em;
+}
+
+footer {
+  text-align: center;
 }
